@@ -1,58 +1,37 @@
-# KneeAI
+# KNEEAI
 
-> **Move with more awareness.**
+![Cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:070707,100:171717&height=230&text=KNEEAI&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=WELLNESS%20%2F%20TRACKING&descColor=999991&descSize=12&descAlignY=66&animation=scaleIn)
 
-KneeAI is a browser-based health-tech prototype built around a simple product idea: make knee wellness more observable through lightweight tracking, gentle planning and clear safety guidance.
+> **WELLNESS / TRACKING.**
 
-This implementation is intentionally **tracking and education oriented**, not diagnostic.
+## THE PREMISE
 
-## Product surface
+KneeAI turns a simple health-tech concept into an observable daily loop: record discomfort, capture mobility context, review a short trend and assemble a gentle movement session.
 
-- Daily 0–10 discomfort check
-- Mobility and swelling observations
-- Local history with up to 60 saved entries
-- Seven-entry trend visualization
-- Gentle movement-plan builder
-- Session duration calculation
-- Safety-first guidance and escalation cues
-- Responsive desktop/mobile interface
-- No account or backend required
+## THE EXPERIENCE
 
-## Safety
+**KneeAI turns a simple health-tech concept into an observable daily loop: record discomfort, capture mobility context, review a short trend and assemble a gentle movement session.**
 
-KneeAI does **not** diagnose conditions or determine the cause of pain. It is not a substitute for a qualified healthcare professional.
+## THE SYSTEM
 
-Stop an activity that causes significant or escalating pain. Appropriate professional care should be considered for severe pain, major swelling, deformity, inability to bear weight, or an acute injury.
+Track the day before judging the trend. | Make safety guidance part of the interface. | Keep the tool educational, not diagnostic.
 
-## Architecture
+## THE STACK
 
-A dependency-free static frontend:
+The MVP is a local-first static application using browser storage for check history and client-side calculations for trends and session planning.
 
-- `index.html` — product structure and metadata
-- `style.css` — responsive visual system
-- `app.js` — tracking state, trend calculations and movement-session builder
-- `favicon.svg` — project mark
-
-Check history is stored in browser `localStorage`. This implementation does not send health observations to an application server.
-
-## Run locally
+## RUN
 
 ```bash
-git clone https://github.com/Kishordiu/KneeAI.git
-cd KneeAI
-python -m http.server 8000
+Functional wellness MVP
 ```
 
-Open `http://localhost:8000`.
+## PROJECT STATE
 
-## Roadmap
+**HTML · CSS · JavaScript · localStorage**
 
-Future versions can add clinician-reviewed exercise libraries, secure accounts, encrypted sync, wearable integrations, camera/motion analysis and explainable model-assisted insights — with medical validation and privacy controls appropriate to each capability.
+This README intentionally distinguishes implemented behaviour from future integrations so the project can evolve without overstating what exists today.
 
-## Status
+---
 
-**Major project · Functional wellness MVP**
-
-Built and maintained by **K. Kishor Kumar**.
-
-[GitHub @Kishordiu](https://github.com/Kishordiu)
+<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
