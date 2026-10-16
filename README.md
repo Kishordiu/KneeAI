@@ -22,15 +22,19 @@ The MVP is a local-first static application using browser storage for check hist
 
 ## RUN
 
-This repository is a static HTML/CSS/JavaScript site; there is no package installation step.
+This repository is a static HTML, CSS and JavaScript prototype; no npm install is required.
 
-From the repository root, run:
+Open `index.html` directly, or serve the project from the repository root:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open [http://localhost:8000](http://localhost:8000). You can also open `index.html` directly for a quick local preview.
+Then visit `http://localhost:8000`.
+
+## SAFETY NOTE
+
+This is a wellness interface prototype, not a diagnostic tool or medical advice. A UI demonstration does not validate a clinical claim.
 
 ## PROJECT STATE
 
