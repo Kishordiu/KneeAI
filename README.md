@@ -22,9 +22,15 @@ The MVP is a local-first static application using browser storage for check hist
 
 ## RUN
 
+This repository is a static HTML/CSS/JavaScript site; there is no package installation step.
+
+From the repository root, run:
+
 ```bash
-Functional wellness MVP
+python -m http.server 8000
 ```
+
+Then open [http://localhost:8000](http://localhost:8000). You can also open `index.html` directly for a quick local preview.
 
 ## PROJECT STATE
 
