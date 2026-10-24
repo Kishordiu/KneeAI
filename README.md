@@ -1,5 +1,7 @@
 ![KNEEAI — bespoke brushed-metal project artwork](./assets/readme-metal-hero.svg)
 
+# KNEEAI
+
 > **WELLNESS / TRACKING.**
 
 ## THE PREMISE
