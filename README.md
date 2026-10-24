@@ -2,46 +2,54 @@
 
 # KNEEAI
 
-> **WELLNESS / TRACKING.**
+**A small, local-first wellness journal for tracking knee discomfort and preparing gentle movement sessions.**
 
-## THE PREMISE
+KneeAI is a static HTML, CSS, and JavaScript prototype. It lets a user record a pain score, note mobility and swelling, save an optional note, view a short history, and select a predefined set of gentle exercises. The entries are stored in the browser using `localStorage`.
 
-KneeAI turns a simple health-tech concept into an observable daily loop: record discomfort, capture mobility context, review a short trend and assemble a gentle movement session.
+## The daily loop
 
-## THE EXPERIENCE
+```text
+Record today's check
+        │
+        ├── Pain score (0–10)
+        ├── Mobility / swelling selections
+        └── Optional note
+                │
+                ▼
+       Browser localStorage
+                │
+                ▼
+Recent history + simple trend view
+                │
+                ▼
+Select exercises for a gentle session
+```
 
-**KneeAI turns a simple health-tech concept into an observable daily loop: record discomfort, capture mobility context, review a short trend and assemble a gentle movement session.**
+## What is implemented
 
-## THE SYSTEM
+- **Check-in log:** Saves a timestamp, pain score, mobility and swelling selections, and optional note.
+- **Recent trend:** Calculates a simple average from recent saved entries and draws a small visual history.
+- **Session builder:** Lets the user select predefined exercise prompts and totals their estimated duration.
+- **Local persistence:** Uses browser storage; records remain in that browser profile and are not a synced medical record.
 
-Track the day before judging the trend. | Make safety guidance part of the interface. | Keep the tool educational, not diagnostic.
+## Run locally
 
-## THE STACK
+No dependency installation or build step is required.
 
-The MVP is a local-first static application using browser storage for check history and client-side calculations for trends and session planning.
-
-## RUN
-
-This repository is a static HTML, CSS and JavaScript prototype; no npm install is required.
-
-Open `index.html` directly, or serve the project from the repository root:
+Open `index.html` directly, or serve the repository root:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Then open [http://localhost:8000](http://localhost:8000).
 
-## SAFETY NOTE
+## Safety and privacy boundary
 
-This is a wellness interface prototype, not a diagnostic tool or medical advice. A UI demonstration does not validate a clinical claim.
+**KneeAI is not a diagnostic tool, treatment plan, or substitute for medical advice.** The trend is a basic summary of user-entered values, not a clinical inference. The exercise list is illustrative; stop any movement that worsens symptoms and seek appropriate professional care for concerning or persistent symptoms. Do not rely on the app for injury triage.
 
-## PROJECT STATE
-
-**HTML · CSS · JavaScript · localStorage**
-
-This README intentionally distinguishes implemented behaviour from future integrations so the project can evolve without overstating what exists today.
+Because data is held in `localStorage`, it can be lost when browser storage is cleared and may be accessible to other people using the same browser profile. Avoid entering information you would not want stored on that device.
 
 ---
 
-<p align="center"><strong>K. KISHOR KUMAR</strong><br><sub>ENGINEERING / PRODUCT / SYSTEMS</sub></p>
+<p align="center"><sub>DIU FOUNDRY · WELLNESS INTERFACE / LOCAL-FIRST PRODUCT EXPLORATION</sub></p>
