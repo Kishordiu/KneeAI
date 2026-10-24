@@ -1,6 +1,4 @@
-# KNEEAI
-
-![Cinematic hero](https://capsule-render.vercel.app/api?type=rect&color=0:070707,100:171717&height=230&text=KNEEAI&fontColor=F3F3EE&fontSize=40&fontAlignY=38&desc=WELLNESS%20%2F%20TRACKING&descColor=999991&descSize=12&descAlignY=66&animation=scaleIn)
+![KNEEAI — bespoke brushed-metal project artwork](./assets/readme-metal-hero.svg)
 
 > **WELLNESS / TRACKING.**
 
